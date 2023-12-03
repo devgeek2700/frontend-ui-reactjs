@@ -1,38 +1,1508 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(254, 249, 246); */
+  /* overflow: hidden; */
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(254, 249, 246);
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* *************************** Navbar section ****************************************/
+
+
+.bgnav {
+  background-color: rgb(254, 249, 246);
+  border-bottom: 1px solid #e3e2e1;
+}
+
+.logorow {
+  display: flex;
+}
+
+.triangle .img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.logoname {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.nav-link {
+  /* text-align: center; */
+  margin-left: 10px;
+}
+
+/* .navbtn1{
+  margin-left: 39%;
+}
+
+.navbtn2{
+  margin-left: 34%;
+  margin-top: 10px;
+} */
+
+#active1 {
+  color: #6b6b78;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#active2 {
+  color: #6b6b78;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#active3 {
+  color: #6b6b78;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+#activebtn1 {
+  width: 80px;
+  height: 40px;
+  background-color: #f1f2f4;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  margin: 5px;
+}
+
+#activebtn2 {
+  width: 120px;
+  height: 40px;
+  background-color: #2e2e2e;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-radius: 10px;
+  margin: 5px;
+
+}
+
+.fa-bars {
+  color: black;
+  font-size: 20px;
+}
+
+/* *************************** Features section ****************************************/
+
+
+.featBox {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(254, 249, 246);;
+  padding-top: 80px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.bluetxt {
+  width: 265px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #f1f2f4;
+  color: black;
+  margin-top: 5%;
+  margin-left: 42%;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#textbig {
+  font-size: 80px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: #2e2e2e;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.greytxt {
+  color: #6b6b78;
+  font-size: 20px;
+}
+
+.blkBtn {
+  width: 220px;
+  height: 52px;
+  background-color: #2e2e2e;
   color: white;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: transform .8s;
+
 }
 
-.App-link {
-  color: #61dafb;
+.blkBtn:hover {
+  transform: scale(1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+small {
+  color: #6b6b78;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+}
+
+.ImgBox {
+  width: 400px;
+  height: 80px;
+  /* background-color: aquamarine; */
+  margin-left: 37%;
+  margin-top: 10px;
+}
+
+.imgboxrow {
+  display: flex;
+}
+
+
+.imagecont {
+  width: 50%;
+  height: 80px;
+  /* background-color: bisque; */
+  display: flex;
+}
+
+.imagetxt {
+  width: 50%;
+  height: 80px;
+  /* background-color: rgb(214, 131, 29); */
+}
+
+.containerImg {
+  position: relative;
+  width: 50%;
+}
+
+.imageAvat {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 16px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  height: 52px;
+  width: 52px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2e2e2e;
+  border-radius: 50%;
+}
+
+.containerImg:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#ava2 {
+  margin-left: -55px;
+  margin-top: 1px;
+}
+
+#ava3 {
+  margin-left: -55px;
+  margin-top: 1px;
+}
+
+#ava4 {
+  margin-left: -55px;
+  margin-top: 1px;
+}
+
+#ava5 {
+  margin-left: -55px;
+  margin-top: 1px;
+}
+
+.starrow {
+  display: flex;
+}
+
+.starsBox {
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+.fa-star {
+  margin: 3px;
+  color: rgb(254, 200, 75);
+  font-size: 20px;
+}
+
+.starstxt h4 {
+  padding-top: 20px;
+  margin-left: 5px;
+  font-size: 20px;
+  color: #2e2e2e;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.greytxt1 {
+  color: #6b6b78;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+
+.slide_up {
+  animation: slideupfeat 1s linear forwards;
+}
+
+@keyframes slideupfeat {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
+}
+
+/* *************************** Float Buttons ****************************************/
+
+
+.float {
+  position: fixed;
+  width: 220px;
+  height: 40px;
+  bottom: 80px;
+  right: 20px;
+  background-color: #fff;
+  color: #2e2e2e;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  padding-top: 8px;
+  transition: transform .8s;
+  z-index: 9999;
+}
+
+#float2{
+  width: 180px;
+  height: 40px;
+  bottom: 30px;
+}
+
+.float:hover {
+  transform: scale(1.1);
+  color: #2e2e2e;
+}
+
+
+.my-float {
+  margin-top: 22px;
+}
+
+.slide_up_f1 {
+  animation: slide_up_float1 5s linear forwards;
+}
+
+@keyframes slide_up_float1 {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.slide_up_f2 {
+  animation: slide_up_float2 6s linear forwards;
+}
+
+@keyframes slide_up_float2 {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+    /* *************************** Admin section ****************************************/
+.Adminbox{
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(254, 249, 246);
+  margin-top: 30px;
+
+}
+
+.adminImgbox{
+  width: 90%;
+  height: 100vh;
+  background-color: pink;
+  margin-left: 5%;
+  border: 2px solid #f1f2f4;
+  border-radius: 15px;
+}
+
+
+.adminImgbox img{
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* *************************** Main features section ****************************************/
+
+.featBox{
+  width: 100%;
+  height: 380vh;
+  background-color: rgb(254, 249, 246);
+}
+
+#blefeat{
+  margin-top: -2%;
+}
+
+.mnfeatcont{
+  width: 100%;
+  height: 80vh;
+  /* background-color:rgb(214, 117, 60); */
+  /* margin-top: -20%; */
+}
+
+#textbig1{
+  font-size: 50px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: #2e2e2e;
+}
+
+.mnfeatrow{
+  display: flex;
+}
+
+.mnfeattxtbox{
+  width: 50%;
+  height: 80vh;
+  /* background-color: chartreuse; */
+}
+
+#feathero2{
+  margin-top: 5%;
+}
+
+#feathero3{
+  /* background-color: rgb(0, 128, 70); */
+  /* margin-top: -43%; */
+  margin-top: 5%;
+
+}
+
+#feathero4{
+  /* background-color: rgb(47, 0, 128); */
+  /* margin-top: -70%; */
+  margin-top: 5%;
+
+}
+
+.mnfeatcalbox{
+  width: 50%;
+  height: 85vh;
+  /* background-color: rgb(255, 200, 0); */
+}
+
+#skinbox{
+  background-color: #fee9cb;
+  margin-top: 5%;
+  margin-left: 20%;
+  padding: 6px 16px;
+}
+
+#skinbox1{
+  background-color: #cceafd;
+  margin-top: 5%;
+  margin-left: 20%;
+  padding: 6px 16px;
+}
+#skinbox2{
+  background-color: #ddf4e4;
+  margin-top: 5%;
+  margin-left: 20%;
+  padding: 6px 16px;
+}
+#skinbox4{
+  background-color: #fdded6;
+  margin-top: 5%;
+  margin-left: 20%;
+  padding: 6px 16px;
+}
+
+#textbig2{
+  font-size: 35px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: #2e2e2e;
+  text-align: left;
+  margin-top: 3%;
+  margin-left: 20%;
+}
+
+.greytxt2{
+  color: #6b6b78;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 3%;
+  margin-left: 20%;
+}
+
+.msgCont{
+  width: 100%;
+  height: 40vh;
+  /* background-color: beige; */
+}
+
+.msgrow{
+  display: flex;
+}
+
+.msgGirlimg{
+  width: 30%;
+  height: 35vh;
+  /* background-color:chocolate; */
+}
+
+.msgGirlBox{
+  width: 70%;
+  height: 35vh;
+  /* background-color:rgb(30, 210, 87); */
+}
+
+#msg3{
+  width: 130px;
+  height: 130px;
+}
+
+.msgGirlimg img{
+  width: 180px;
+  height: 180px;
+  margin-top: 50px;
+  margin-left: 90px;
+}
+
+.msgGirlsubBox{
+  width: 70%;
+  height: 15vh;
+  background-color: #2e2e2e;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+}
+
+#textbigmsg{
+  font-size: 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  color: #fff;
+  text-align: left;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+#headfin{
+  font-size: 18px;
+  font-weight: 600;
+  color: #9e9e9f;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5%;
+  margin-top: -8px;
+}
+
+.rotateImg{
+  animation: rotateImgcalemdra 1.2s linear forwards;
+}
+
+
+@keyframes rotateImgcalemdra {
+  0% {
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0deg);
+    opacity: 1;
+  }
+}
+
+#featbox2{
+  margin-left: 40%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 10px;
+}
+
+#rightmsgImg{
+  width: 120px;
+  height: 120px;
+  margin-top: 10px;
+  margin-left: -50px;
+}
+#rightmsgImg img{
+  width: 120px;
+  height: 120px;
+}
+
+  /* *************************** Admin section ****************************************/
+
+
+.Adminbox{
+  margin-top: -120%;
+}
+
+  /* *************************** card section ****************************************/
+
+
+.CardCont{
+  width: 100%;
+  height: 150vh;
+  background-color: rgb(254, 249, 246);
+  margin-top: -5%;
+}
+
+#textbigcd{
+  font-size: 40px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: #2e2e2e;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cardBox{
+  width: 95%;
+  height: 60vh;
+  /* background-color: #fdded6; */
+  margin-left: 3%;
+  margin: 2%;
+}
+
+.cardrow{
+  display: flex;
+}
+
+.cardHero{
+  width: 400px;
+  height: 55vh;
+  /* background-color: #fff; */
+  margin-top: 1%;
+  margin-left: 4%;
+  padding: 5px;
+}
+
+.cdImg{
+  width: 390px;
+  height: 27.5vh;
+  border-radius: 15px;
+}
+
+.cdsubbox1{
+  width: 230px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #f1f2f4;
+  color: black;
+  margin-top: 5%;
+  margin-left: 4%;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cdtext{
+  text-align: left;
+  margin-left: 4%;
+  color: #6b6b78;
+  margin-top: 4%;
+  font-size: 16px;
+}
+
+#cdsubbohhx2{
+  background-color: #fee9cb;
+}
+
+#cdsubbohhx3{
+  background-color: #cceafd;
+}
+#cdsubbohhx4{
+  width: 270px;
+  background-color: #ddf4e4;
+}
+#cdsubbohhx5{
+  background-color: #fdded6;
+}
+#cdsubbohhx6{
+  background-color: #c39cf6;
+}
+
+
+
+  /* *************************** reviews section ****************************************/
+.ReviewCont{
+  width: 100%;
+  height: 120vh;
+  background-color: rgb(254, 249, 246);
+  overflow: hidden;
+}
+
+#bluecard1{
+  width: 310px;
+  height: 40px;
+}
+
+.revcont{
+  width: 100%;
+  height: 30vh;
+  /* background-color: aquamarine; */
+}
+
+#revcontbox1{
+  margin-left: -10%;
+}
+#revcontbox2{
+  margin-left: -15%;
+}
+#revcontbox3{
+  margin-left: -20%;
+}
+
+.revRow{
+  display: flex;
+}
+
+.revBox{
+  width: 530px;
+  height: 25vh;
+  background-color: #fff;
+  margin-left: .5%;
+  margin-top: 1%;
+  border-radius: 15px;
+  white-space: nowrap;
+  transition: 2s;
+}
+
+.revimg{
+  width: 100%;
+  height: 6.3vh;
+  /* background-color: brown; */
+  display: flex;
+}
+
+.revcusimg{
+  width: 10%;
+  height: 6.3vh;
+  /* background-color: rgb(69, 165, 42); */
+}
+
+.revcusimg img{
+  width: 40px;
+  height: 35px;
+  margin-left: 15%;
+  margin-top: 4px;
+  border-radius: 50%;
+}
+
+.revcusname{
+  width: 50%;
+  height: 6.3vh;
+  /* background-color: rgb(165, 42, 161); */
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.revcusname h2{
+  color: #2e2e2e;
+  font-size: 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+}
+.revcusstar{
+  width: 40%;
+  height: 6.3vh;
+  /* background-color: rgb(235, 175, 233); */
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.revtxt{
+  width: 100%;
+  height: 12.3vh;
+  /* background-color: rgb(42, 165, 83); */
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.revtxt p{
+  text-align: left;
+  color: #6b6b78;
+
+}
+
+.revHead{
+  width: 100%;
+  height: 6.3vh;
+  /* background-color: rgb(161, 42, 165); */
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  
+}
+
+.revstarss{
+  font-size: 10px;
+}
+
+.revHead .revcol1 h2{
+  color: #2e2e2e;
+  font-size: 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  margin-left: -60px;
+}
+
+.revHead .revcol2 p{
+color: #6b6b78;
+  font-size: 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+}
+
+
+.inifityReviwes{
+  animation: inifityReviwesslide 15s linear infinite;
+
+}
+
+@keyframes inifityReviwesslide {
+  0%{
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(-5%);
+  }
+}
+
+  
+
+  /* *************************** Pricing section ****************************************/
+
+.pricebox{
+  width: 100%;
+  height: 130vh;
+  background-color: rgb(254, 249, 246);
+  margin-top: -8%;
+  padding-top: 60px;
+}
+
+#textbigpr{
+  font-size: 40px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: #2e2e2e;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#blueboxprrr{
+  margin-top: 8%;
+}
+
+.containerprrr{
+  min-height: 100vh;
+  text-align: center;
+}
+
+.containerprrr .box-container{
+  max-width: 1300px;
+  margin:0 auto;
+  padding:30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:20px;
+}
+
+.containerprrr .box-container .box{
+  background: #fff;
+  border-radius: 15px;
+}
+
+
+.containerprrr .box-container .box h3{
+  font-size: 25px;
+  padding:17px 0;
+  color:#444;
+}
+
+.containerprrr .box-container .box .price{
+  color: #2e2e2e;
+  font-weight: bolder;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 60px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+#prmonth{
+  color: #6b6b78;
+  font-size: 22px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+}
+
+#freetxt{
+  color: #2e2e2e;
+  font-size: 18px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-align: left;
+  margin-left: 40px;
+}
+
+#blckprrbtn{
+  width: 80%;
+  font-weight: 600;
+}
+
+#prrcredit{
+  color: #2e2e2e;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+}
+
+#firtslsthead{
+  color: #2e2e2e;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 40px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.containerprrr .box-container .box .price.year{
+  display: none;
+}
+
+
+.list p{
+  text-align: left;
+  margin-left: 60px;
+  color: #9e9e9f;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.list p i{
+  color: #c39cf6;
+  margin-right: 10px;
+}
+
+
+.containerprrr .price-toggler{
+  margin-top: 8px;
+  height: 40px;
+  width: 300px;
+  display: inline-block;
+  /* padding:5px; */
+  /* border:2px solid #000; */
+  background: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 0;
+
+}
+
+.containerprrr .price-toggler span{
+  padding:7px 30px;
+  cursor: pointer;
+  color:#444;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.containerprrr .price-toggler span.active{
+  background: #fff;
+  height: 33px;
+  padding-top: 4px;
+  width: 150px;
+  margin-left: -4px;
+  color:black;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-radius: 10px;
+}
+
+@media (max-width:450px){
+  .containerprrr .box-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+#blueboxprcd{
+  width: 90px;
+  margin-left: 20px;
+}
+
+#blueboxprcd2{
+  width: 100px;
+  margin-left: 20px;
+  background-color: #fee9cb;
+}
+
+#blueboxprcd3{
+  width: 90px;
+  margin-left: 20px;
+  background-color: #fdded6;
+}
+
+#greytxtcd {
+  color: #6b6b78;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+
+  /* *************************** fqs section ****************************************/
+
+
+.fquesbox{
+  width: 100%;
+  height: 110vh;
+  padding-top: 180px;
+  background-color: rgb(254, 249, 246);
+}
+
+#blueboxpfqs{
+  margin-top: -3%;
+}
+
+body {
+  color: #9e9e9f;
+  background: #f1f2f4;
+  padding: 0 1em 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+h1{
+  text-align:center;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.accordion-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5); */
+  width: 1000px;
+  padding-top: 20px;
+  margin:0 auto;
+}
+.accordion {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.accordion:last-child{
+  margin-bottom: 0;
+}
+.accordion-label {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 16px;
+  background: #f1f2f4;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 15px;
+  color: #9e9e9f;
+}
+
+.accordion-label::after {
+  content: "\276F";
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.accordion-content {
+  max-height: 0;
+  padding: 0 16px;
+  color: red;
+  background: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.accordion-content p{
+  margin: 0;
+  color: #9e9e9f;
+  font-size: 18px;
+}
+input:checked + .accordion-label {
+  background: #f1f2f4;
+}
+input:checked + .accordion-label::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+input:checked ~ .accordion-content {
+  max-height: 100vh;
+  padding: 16px;
+}
+
+.headacc{
+  color: #2e2e2e;
+}
+
+
+  /* *************************** ready section ****************************************/
+
+.readybox{
+  width: 100%;
+  height: 100vh;
+  /* margin-top: 3%; */
+  padding-top: 120px;
+  background-color: rgb(254, 249, 246);
+  /* background-color: rgb(217, 104, 39); */
+}
+
+#redapara{
+  font-size: 60px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: #2e2e2e;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#readyget{
+  text-align: center;
+}
+
+#redbtn{
+  margin-left: 43%;
+}
+
+.redabox{
+  width: 50%;
+  height: 50vh;
+  margin-top: 30px;
+  margin-left: 25%;
+}
+
+
+#rdymsghero{
+  width: 80%;
+  background-color: #fee9cb;
+
+}
+
+#textbigmsg1{
+  color: #2e2e2e;
+  font-size: 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  text-align: left;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+
+  /* *************************** footer section ****************************************/
+
+
+.footcontainer{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+  background-color: #f1f2f4;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #24262b;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 800;
+	position: relative;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #6b6b78;
+  font-weight: 500;
+  margin-left: -30px;
+	display: block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.footer-col ul li a:hover{
+  text-decoration: underline;
+}
+
+.footer-col .social-links{
+  margin-left: -10px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #c39cf6;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+#foologtxt{
+  padding-top: 30px;
+}
+
+#tr{
+  background-color: #3bb0f9;
+}
+
+#fb{
+  background-color: #2078ae;
+}
+
+#linked{
+  background-color: #2078ae;
+
+}
+
+#footlst{
+  padding: 0 5px;
+}
+
+
+
+
+
+
+
+
+/* =================================================  Media Query Resposnsive  =================================================== */
+
+
+/* for moblie phones */
+@media screen and (max-width: 430px) {
+
+
+  /* *************************** Features section ****************************************/
+
+  .featBox {
+    height: 70vh;
+    overflow: hidden;
+  }
+  
+/* .featBox {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(254, 249, 246);;
+  padding-top: 80px;
+  text-align: center;
+} */
+
+  #textbig {
+    font-size: 30px;
+    margin-left: -60px;
+  }
+
+  .bluetxt {
+    font-size: 12px;
+    margin-top: 20%;
+    margin-left: 3%;
+  }
+
+  .greytxt {
+    font-size: 10px;
+    margin-left: -65px;
+  }
+
+  .blkBtn {
+    margin-left: -65px;
+  }
+
+  small {
+    font-size: 10px;
+    margin-left: -65px;
+  }
+
+  .ImgBox {
+    margin-left: 10px;
+  }
+
+  .imageAvat {
+    width: 30px;
+    height: 30px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 16px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    height: 30px;
+    width: 30px;
+
+  }
+
+  #ava2 {
+    margin-left: -85px;
+    margin-top: 1px;
+  }
+
+  #ava3 {
+    margin-left: -85px;
+    margin-top: 1px;
+  }
+
+  #ava4 {
+    margin-left: -85px;
+    margin-top: 1px;
+  }
+
+  #ava5 {
+    margin-left: -85px;
+    margin-top: 1px;
+  }
+
+  .starsBox {
+    margin-left: -80px;
+    padding-top: 15px;
+  }
+
+  .fa-star {
+    font-size: 14px;
+  }
+
+
+  .greytxt1 {
+    font-size: 12px;
+    margin-top: -10px;
+    margin-left: -210px;
+  }
+
+    /* *************************** Admin section ****************************************/
+    .Adminbox{
+      width: 100%;
+      height: 100vh;
+      background-color:rgb(254, 249, 246);
+      margin-top: 30px;
+      overflow: hidden;
+
+    
+    }
+    
+    .adminImgbox{
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      margin-left: 5%;
+      border: 2px solid #f1f2f4;
+      border-radius: 15px;
+    }
+    
+    
+    .adminImgbox img{
+      width: 200px;
+      height: 200px;
+    }
+    
+
+  /* *************************** Main features section ****************************************/
+
+#navbar1{
+  overflow: hidden;
+}
+
+  #textbig1{
+    font-size: 16px;
+    margin-left: -60px;
+  }
+  
+  #skinbox{
+    margin-left: 5%;
+  }
+
+  .mnfeatrow{
+    flex-direction: column;
+  }
+  
+  #textbig2{
+    font-size: 20px;
+    margin-left: 20%;
+  }
+
+  .greytxt2{
+    font-size: 11px;
+  }
+  .msgGirlsubBox{
+    width: 230px;
+    height: 10vh;
+    margin-left: -15px;
+  }
+
+  .msgGirlimg img{
+    width: 120px;
+    height: 120px;
+    margin-top: 70px;
+    margin-left: -20px;
+  }
+
+  #textbigmsg{
+    font-size: 9px;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+  
+  #headfin{
+    font-size: 10px;
+    margin-left: 5%;
+    margin-top: -8px;
+  }
+
+  .rotateImg{
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+    margin-top: -70%;
+  }
+
+  .mnfeatcont{
+    height: 100vh;
+  }
+    /* *************************** floa buttons ****************************************/
+
+  
+  
+
+}
+
+
+/* for laptops */
+@media screen and (max-width: 1024px) {
+  /* #textbig{
+    font-size: 80px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    color: #2e2e2e;
+  } */
 }
